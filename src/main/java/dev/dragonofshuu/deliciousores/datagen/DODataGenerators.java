@@ -26,7 +26,21 @@ public class DODataGenerators {
             event.includeServer(), 
             new DODataPackProvider(output, lookupProvider)
         );
+
+        generator.addProvider(
+            event.includeServer(), 
+            new DORecipeProvider(output, lookupProvider)
+        );
+
+        generator.addProvider(
+            event.includeServer(), 
+            new DOLootTableProvider(output, lookupProvider)
+        );
         
         // CLIENT
+        generator.addProvider(
+            event.includeClient(),
+            new DOBlockstateProvider(output, existingFileHelper)
+        );
     }
 }
