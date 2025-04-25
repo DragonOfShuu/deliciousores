@@ -4,6 +4,8 @@ import java.util.concurrent.CompletableFuture;
 
 import dev.dragonofshuu.deliciousores.DeliciousOres;
 import dev.dragonofshuu.deliciousores.datagen.data.DODataPackProvider;
+import dev.dragonofshuu.deliciousores.datagen.language.DOLanguageProvider;
+import dev.dragonofshuu.deliciousores.datagen.tag.DOTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -36,8 +38,12 @@ public class DODataGenerators {
             event.includeServer(), 
             new DOLootTableProvider(output, lookupProvider)
         );
+
+        DOTagsProvider.addTagProviders(event);
         
         // CLIENT
+        DOLanguageProvider.addLanguageProviders(event);
+
         generator.addProvider(
             event.includeClient(),
             new DOBlockstateProvider(output, existingFileHelper)
