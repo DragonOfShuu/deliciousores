@@ -42,5 +42,10 @@ public class DODataGenerators {
             event.includeClient(),
             new DOBlockstateProvider(output, existingFileHelper)
         );
+        
+        generator.addProvider(
+            event.includeClient(),
+            new DOItemModelProvider(output, existingFileHelper)
+        );
     }
 }
