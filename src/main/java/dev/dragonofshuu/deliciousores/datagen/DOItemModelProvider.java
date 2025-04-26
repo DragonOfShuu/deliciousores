@@ -1,6 +1,8 @@
 package dev.dragonofshuu.deliciousores.datagen;
 
 import dev.dragonofshuu.deliciousores.DeliciousOres;
+import dev.dragonofshuu.deliciousores.block.DOBlocks;
+import dev.dragonofshuu.deliciousores.item.DOItems;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -13,7 +15,9 @@ public class DOItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-
+        simpleBlockItem(DOBlocks.CARROTITE_ORE.get());
+        simpleBlockItem(DOBlocks.FERTILE_GRAVEL.get());
+        basicItem(DOItems.RAW_CARROTITE.get());
     }
     
 }

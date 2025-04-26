@@ -1,6 +1,8 @@
 package dev.dragonofshuu.deliciousores.datagen.language;
 
 import dev.dragonofshuu.deliciousores.DeliciousOres;
+import dev.dragonofshuu.deliciousores.block.DOBlocks;
+import dev.dragonofshuu.deliciousores.item.DOItems;
 import net.minecraft.data.PackOutput;
 
 public class DOLanguageEnUsProvider extends DOLanguageBaseProvider {
@@ -20,5 +22,10 @@ public class DOLanguageEnUsProvider extends DOLanguageBaseProvider {
         add("itemGroup.deliciousores", "Delicious Ores");
 
         add("tooltip.deliciousores.press_shift", "§5HOLD SHIFT");
+
+        addBlock(DOBlocks.CARROTITE_ORE, "Carrotite Ore");
+        addBlock(DOBlocks.FERTILE_GRAVEL, "Fertile Gravel");
+    
+        addItem(DOItems.RAW_CARROTITE, "Raw Carrotite");
     }
 }
