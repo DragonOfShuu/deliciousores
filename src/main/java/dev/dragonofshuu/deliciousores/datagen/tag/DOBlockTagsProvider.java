@@ -5,6 +5,8 @@ import java.util.concurrent.CompletableFuture;
 import org.jetbrains.annotations.Nullable;
 
 import dev.dragonofshuu.deliciousores.DeliciousOres;
+import dev.dragonofshuu.deliciousores.block.DOBlocks;
+import dev.dragonofshuu.deliciousores.common.DOTags;
 import net.minecraft.core.HolderLookup.Provider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -52,5 +54,8 @@ public class DOBlockTagsProvider extends BlockTagsProvider {
         this.tag(BlockTags.REPLACEABLE);
         
         this.tag(BlockTags.CAVE_VINES);
+
+        this.tag(DOTags.Blocks.FARMABLE_ORE_REPLACEABLE)
+            .add(DOBlocks.FERTILE_GRAVEL.get());
     }
 }

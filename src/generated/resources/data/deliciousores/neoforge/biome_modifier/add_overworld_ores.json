@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#c:is_overworld",
+  "features": [
+    "deliciousores:ore_fertile_gravel",
+    "deliciousores:ore_carrotite"
+  ],
+  "step": "underground_ores"
+}
