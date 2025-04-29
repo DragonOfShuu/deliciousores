@@ -10,7 +10,7 @@ public class DOItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(DeliciousOres.MODID);
     private static final DOItemsUtil itemsUtil = new DOItemsUtil(ITEMS);
     
-    public static DeferredItem<Item> RAW_CARROTITE = itemsUtil.registerItem("raw_carrotite", new Item.Properties());
+    public static DeferredItem<Item> RAW_CARROTITE = itemsUtil.registerItem("raw_carrotite", new Item.Properties().food(DOFoods.CARROTITE_FOOD));
 
     public static IEventBus register(IEventBus bus) {
         ITEMS.register(bus);

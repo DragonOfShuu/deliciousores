@@ -18,7 +18,7 @@ public class DOOreFeatures {
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneTarget = new TagMatchTest(BlockTags.BASE_STONE_OVERWORLD);
         RuleTest farmableOreTarget = new TagMatchTest(DOTags.Blocks.FARMABLE_ORE_REPLACEABLE);
-        DOFeatures.register(context, ORE_FERTILE_GRAVEL, Feature.ORE, new OreConfiguration(stoneTarget, DOBlocks.FERTILE_GRAVEL.get().defaultBlockState(), 40, 0));   
+        DOFeatures.register(context, ORE_FERTILE_GRAVEL, Feature.ORE, new OreConfiguration(stoneTarget, DOBlocks.FERTILE_GRAVEL.get().defaultBlockState(), 60, 0));   
         DOFeatures.register(context, ORE_CARROTITE, Feature.ORE, new OreConfiguration(farmableOreTarget, DOBlocks.CARROTITE_ORE.get().defaultBlockState(), 10, 0.3f));
     }
 }
