@@ -3,7 +3,8 @@
   "biomes": "#c:is_overworld",
   "features": [
     "deliciousores:ore_fertile_gravel",
-    "deliciousores:ore_carrotite"
+    "deliciousores:ore_carrotite",
+    "deliciousores:ore_applite"
   ],
   "step": "underground_ores"
 }

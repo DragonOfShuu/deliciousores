@@ -20,14 +20,17 @@ import net.minecraft.world.level.levelgen.placement.RarityFilter;
 public class DOOrePlacements {
     public static ResourceKey<PlacedFeature> ORE_FERTILE_GRAVEL = DOPlacements.createKey("ore_fertile_gravel");
     public static ResourceKey<PlacedFeature> ORE_CARROTITE = DOPlacements.createKey("ore_carrotite");
+    public static ResourceKey<PlacedFeature> ORE_APPLITE = DOPlacements.createKey("ore_applite");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredGetter = context.lookup(Registries.CONFIGURED_FEATURE);
         var fertileGravel = configuredGetter.getOrThrow(DOOreFeatures.ORE_FERTILE_GRAVEL);
         var carrotiteOre = configuredGetter.getOrThrow(DOOreFeatures.ORE_CARROTITE);
+        var appliteOre = configuredGetter.getOrThrow(DOOreFeatures.ORE_APPLITE);
 
         DOPlacements.register(context, ORE_FERTILE_GRAVEL, fertileGravel, commonOrePlacement(4, HeightRangePlacement.triangle(VerticalAnchor.absolute(-10), VerticalAnchor.absolute(120))));
         DOPlacements.register(context, ORE_CARROTITE, carrotiteOre, commonOrePlacement(200, HeightRangePlacement.uniform(VerticalAnchor.BOTTOM, VerticalAnchor.TOP)));
+        DOPlacements.register(context, ORE_APPLITE, appliteOre, commonOrePlacement(200, HeightRangePlacement.uniform(VerticalAnchor.BOTTOM, VerticalAnchor.TOP)));
     }
 
     public static List<PlacementModifier> orePlacement(PlacementModifier countPlacement, PlacementModifier heightRange) {

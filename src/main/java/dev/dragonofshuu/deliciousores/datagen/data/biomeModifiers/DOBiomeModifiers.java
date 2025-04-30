@@ -24,10 +24,11 @@ public class DOBiomeModifiers {
         var isOverworld = biomes.getOrThrow(Tags.Biomes.IS_OVERWORLD);
 
         HolderGetter<PlacedFeature> placedFeatures = bootstrap.lookup(Registries.PLACED_FEATURE);
-        var ore_fertile_gravel = placedFeatures.getOrThrow(DOOrePlacements.ORE_FERTILE_GRAVEL);
-        var ore_carrotite = placedFeatures.getOrThrow(DOOrePlacements.ORE_CARROTITE);
+        var oreFertileGravel = placedFeatures.getOrThrow(DOOrePlacements.ORE_FERTILE_GRAVEL);
+        var oreCarrotite = placedFeatures.getOrThrow(DOOrePlacements.ORE_CARROTITE);
+        var oreApplite = placedFeatures.getOrThrow(DOOrePlacements.ORE_APPLITE);
 
-        var overworldFeatures = HolderSet.direct(ore_fertile_gravel, ore_carrotite);
+        var overworldFeatures = HolderSet.direct(oreFertileGravel, oreCarrotite, oreApplite);
 
         bootstrap.register(ADD_OVERWORLD_ORES,
             new BiomeModifiers.AddFeaturesBiomeModifier(

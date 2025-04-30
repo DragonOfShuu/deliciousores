@@ -1,6 +1,9 @@
 {
+  "block.deliciousores.applite_ore": "Applite Ore",
   "block.deliciousores.carrotite_ore": "Carrotite Ore",
   "block.deliciousores.fertile_gravel": "Fertile Gravel",
+  "item.deliciousores.carrotite_ingot": "Carrotite Ingot",
+  "item.deliciousores.raw_applite": "Raw Applite",
   "item.deliciousores.raw_carrotite": "Raw Carrotite",
   "itemGroup.deliciousores": "Delicious Ores",
   "tooltip.deliciousores.press_shift": "§5HOLD SHIFT"

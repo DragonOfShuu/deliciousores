@@ -13,6 +13,7 @@ public class DOBlockLootProvider extends DOBlockLootProviderBase {
     @Override
     protected void generate() {
         add(DOBlocks.CARROTITE_ORE.get(), block -> createOreDrop(block, DOItems.RAW_CARROTITE.get()));
+        add(DOBlocks.APPLITE_ORE.get(), block -> createOreDrop(block, DOItems.RAW_APPLITE.get()));
         
         dropSelf(DOBlocks.FERTILE_GRAVEL.get());
     }

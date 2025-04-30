@@ -20,6 +20,8 @@ public class DOBlocks {
         () -> new ColoredFallingBlock(new ColorRGBA(-8356741), BlockBehaviour.Properties.ofFullCopy(Blocks.GRAVEL)));
     public static DeferredBlock<Block> CARROTITE_ORE = BlocksUtil.registerBlock("carrotite_ore", 
         () -> new ColoredFallingBlock(new ColorRGBA(-8356741), BlockBehaviour.Properties.ofFullCopy(Blocks.GRAVEL).pushReaction(PushReaction.DESTROY)));
+    public static DeferredBlock<Block> APPLITE_ORE = BlocksUtil.registerBlock("applite_ore", 
+        () -> new ColoredFallingBlock(new ColorRGBA(-8356741), BlockBehaviour.Properties.ofFullCopy(Blocks.GRAVEL).pushReaction(PushReaction.DESTROY)));
 
     public static IEventBus register(IEventBus modEventBus) {
         BLOCKS.register(modEventBus);

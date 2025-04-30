@@ -16,8 +16,12 @@ public class DOItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleBlockItem(DOBlocks.CARROTITE_ORE.get());
+        simpleBlockItem(DOBlocks.APPLITE_ORE.get());
         simpleBlockItem(DOBlocks.FERTILE_GRAVEL.get());
+
+        basicItem(DOItems.CARROTITE_INGOT.get());
         basicItem(DOItems.RAW_CARROTITE.get());
+        basicItem(DOItems.RAW_APPLITE.get());
     }
     
 }

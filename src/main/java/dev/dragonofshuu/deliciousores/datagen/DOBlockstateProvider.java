@@ -15,6 +15,7 @@ public class DOBlockstateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         simpleBlock(DOBlocks.CARROTITE_ORE.get());
+        simpleBlock(DOBlocks.APPLITE_ORE.get());
         simpleBlock(DOBlocks.FERTILE_GRAVEL.get());
     }
 }

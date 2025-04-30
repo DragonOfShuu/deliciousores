@@ -24,8 +24,12 @@ public class DOLanguageEnUsProvider extends DOLanguageBaseProvider {
         add("tooltip.deliciousores.press_shift", "§5HOLD SHIFT");
 
         addBlock(DOBlocks.CARROTITE_ORE, "Carrotite Ore");
+        addBlock(DOBlocks.APPLITE_ORE, "Applite Ore");
         addBlock(DOBlocks.FERTILE_GRAVEL, "Fertile Gravel");
     
+        addItem(DOItems.CARROTITE_INGOT, "Carrotite Ingot");
+
         addItem(DOItems.RAW_CARROTITE, "Raw Carrotite");
+        addItem(DOItems.RAW_APPLITE, "Raw Applite");
     }
 }
